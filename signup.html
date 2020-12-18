@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body class='center'>
+        <form method='post' name='sendtosheets'>
+            <div class='container'>
+                <label><b>Sign Up</b></label><br><br>
+                <input type='text' name='Name' placeholder='Name' required><br>
+                <input type='text' name='Email' placeholder='Email' required><br>
+                <input type='password' name='Password' placeholder='Password' required><br>
+                <input type='submit' name='submit' value='submit' /><br>
+            </div>
+        </form>
+        <script>
+            const url = 'https://script.google.com/macros/s/AKfycbzPo9YLpPTWmU9S_AF0tV00fBhn-YY9Wp80AwCX1EGHmQnZeZQjom57sw/exec'
+            const form = document.forms['sendtosheets']
+            // console.log(form)
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(url, { method: 'POST', body: new FormData(form)})
+                .then(response => alert('Successful!'))
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+    </body>
+</html>

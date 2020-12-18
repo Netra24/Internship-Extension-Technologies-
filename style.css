@@ -1,0 +1,37 @@
+input {
+    width: 120%;
+    padding: 15px 20px;
+    margin: 8px 0;
+    font-size: 15px;
+    border-radius: 7px;
+}
+
+button {
+    background-color: rgb(59, 236, 59);
+    width: 120%;
+    padding: 12px 20px;
+    font-size: 15px;
+    border-radius: 7px;
+  }
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form {
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 80px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 15px;
+    background-color: rgb(190, 136, 240);
+  }
+
+  label {
+    font-size: 22px;
+    margin-left: 90px;
+  }
